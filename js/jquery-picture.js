@@ -162,6 +162,11 @@
 					sizes[num] = path;
 
 				});
+				
+				if (sizes[currentMedia] === undefined) {
+		                    element.find('img').remove();
+		                    return;
+		                }
 
 				if(element.find('img').length == 0){
 
@@ -211,6 +216,11 @@
 					sizes[num] = path;
 
 				});
+				
+				if (sizes[currentMedia] === undefined) {
+		                    element.find('img').remove();
+		                    return;
+		                }
 
 				if(element.find('img').length == 0){
 
